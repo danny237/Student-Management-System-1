@@ -1,11 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
 .night_body{
     font-family: 'Raleway', sans-serif;
     margin: 0px;
     height: 100vh;
     width: 100%;
-    background-color: #2D3436;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     margin: 0px;
     height: 100vh;
     width: 100%;
-    background-color: #fff;
+    background-color: #2D3436;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +99,7 @@
 .toggle{
     position: absolute;
     margin-top: 50px;
-    margin-left: 980px;
+    margin-left: 955px;
     display: flex;
     color: #fff;
 }
@@ -110,7 +110,7 @@
 
 .togglebtn{
     position:relative;
-    margin: 3px 5px;
+    margin: 5px 10px;
     width: 50px;
     height: 10px;
     border-radius: 10px;
@@ -121,13 +121,28 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    margin-left: 5px;
     margin-top: -2.6px;
     border-radius: 20px;
     background-color: #fff;
+    transition: 0.5sec;
 }
+
 .checkbox{
     visibility: hidden;
     display: none;
 }
 
+.checkbox:checked  .circle{
+    background-color: red;
+}
+
+.circle_right{
+    background-color: #fff;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: -2.6px;
+    border-radius: 20px;
+    transition: 0.5sec;
+    right: 0;
+}

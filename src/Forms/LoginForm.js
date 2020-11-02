@@ -47,7 +47,7 @@ export default function LoginForm() {
                     <div className={style.togglebtn}>
                         <div
                         onClick={() => toggleHandler()}
-                        className={style.circle}></div>
+                        className={(isNightMode ? style.circle_right : style.circle)}></div>
                     </div>
                     </label>
                 <Brightness7Icon className={style.icon}/>
