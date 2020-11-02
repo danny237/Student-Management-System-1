@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+.night_body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: #2D3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1176px;
+    height: 746px;
+    border-radius: 50px;
+    background-color: #2D3436;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.form{
+    z-index: 0;
+    margin-top: 250px;
+    margin-left: 588px;
+    color: white;
+}
+
+.input{
+    width: 443px;
+    margin: 15px 0;
+    color: white;
+    padding: 20px;
+    border: none;
+    background-color: #3F484B;
+}
+
+::placeholder{
+    color: white;
+}
+
+.arrow{
+    margin-left: -15px;
+}
+.submit_btn{
+    padding: 10px;
+}
+
+.ncit{
+    position: absolute;
+    z-index: 0;
+    color: #505556;
+    font-size: 30px;
+    transform: rotate(270deg);
+    margin-top: 280px;
+    margin-left: 370px;
+}
+
+.center{
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.left_section{
+    content: "";
+    position: absolute;
+    background: rgba(107, 100, 203, 0.5);
+    height: 746px;
+    width: 441px;
+    border-radius: 50px 0 0 50px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical_center{
+    margin: 200px 0px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.backbtn{
+    margin-top: 140px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+.toggle{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 980px;
+    display: flex;
+    color: #fff;
+}
+
+.icon{
+    font-size: medium;
+}
+
+.togglebtn{
+    position:relative;
+    margin: 3px 5px;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #505556;
+}
+
+.circle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: -2.6px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.checkbox{
+    visibility: hidden;
+    display: none;
+}
+
