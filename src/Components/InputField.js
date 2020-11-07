@@ -6,7 +6,6 @@ import { DarkContext } from '../App'
 export default function InputField({placeholder, type, onChange,id}) {
     
     const [dark] = useContext(DarkContext)
-    console.log(dark)
    
     return (
         <div>

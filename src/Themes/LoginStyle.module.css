@@ -85,10 +85,6 @@
     color: #505556;
 }
 
-/* .dark{
-    color: black;
-} */
-
 .togglebtn{
     margin-top: -5px;
 }
@@ -108,9 +104,11 @@
     margin: 19px 0;
     width: 443px;
     background-color: #505556;
+    color: #fff;
 }
 .inputDark{
     background-color: #c5c5c5;
+    color: #505556;
 }
 input::placeholder{
     color: white;
@@ -127,6 +125,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .doubleArrowLight{
@@ -216,7 +215,9 @@ input::placeholder{
         padding: 30px;
     }
     .inputField{
+        margin: 10px 0;
         width: 300px;
+        padding: 20px;
     }
     .loginForm{
         width: 400px;
@@ -229,16 +230,3 @@ input::placeholder{
         margin: 20px;
     }
 }
-
-/* @media only screen and (max-width: 576px){
-    .loginContainer{
-        width: 400px;
-        flex-direction: column;
-     }
-    .inputField{
-        width: 300px;
-    }
-    .loginForm{
-        width: 400px;
-    }
-} */
