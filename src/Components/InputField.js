@@ -3,7 +3,7 @@ import style from '../Themes/LoginStyle.module.css'
 import { DarkContext } from '../App'
 
 
-export default function InputField({placeholder, type, onChange,id}) {
+export default function InputField({placeholder, type, onChange}) {
     
     const [dark] = useContext(DarkContext)
    

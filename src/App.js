@@ -1,24 +1,57 @@
 import React, { useState, useEffect } from "react";
-import LoginForm from './Forms/Login'
+import Login from './Pages/Login'
+import Home from './Pages/Home'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 export const DarkContext = React.createContext()
+export const LoginContext = React.createContext()
 
 export default function App() {
 
-  const [darkMode, setDarkMode] = useState(getInitialMode)
+  const [loginStatus, setLoginStatus] = useState(getInitialLoginStatus())
+  const [darkMode, setDarkMode] = useState(getInitialMode())
 
+  const userDesc = {
+    loginStatus,
+    darkMode
+  }
+
+  // localStorage.setItem('userDesc', JSON.stringify(userDesc))
+  
   useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(darkMode));
-  },[darkMode])
+    localStorage.setItem('userDesc', JSON.stringify(userDesc))
+  },[darkMode, loginStatus])
 
   function getInitialMode(){
-    const savedMode = JSON.parse(localStorage.getItem("dark"));
-    return savedMode || false;
+    const userInfo = JSON.parse(localStorage.getItem('userDesc'))
+    if (userInfo){
+      return userInfo.darkMode
+    }
+    return false
+  }
+
+  function getInitialLoginStatus(){
+    const userInfo = JSON.parse(localStorage.getItem('userDesc'))
+    if (userInfo){
+      return userInfo.loginStatus
+    }
+    return false
   }
 
   return (
-    <DarkContext.Provider value={[darkMode,setDarkMode]}>
-      <LoginForm />
-    </DarkContext.Provider>
+    
+    <Router>
+      <Switch>
+        <DarkContext.Provider value={[darkMode,setDarkMode]}>
+          <LoginContext.Provider value={[loginStatus, setLoginStatus]}>
+
+            <Route exact path="/" 
+            render = {() => (loginStatus ? <Home /> : <Login />)}
+            />
+          </LoginContext.Provider>
+        </DarkContext.Provider>
+      </Switch>
+    </Router>
+
   );
 }

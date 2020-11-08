@@ -1,14 +1,24 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import style from '../Themes/LoginStyle.module.css'
-import { DarkContext } from '../App';
-import LoginForm from '../Components/LoginForm'
+import { DarkContext} from '../App';
+import LoginForm from '../Forms/LoginForm'
 import Switcher from '../Components/Switcher'
+import { MORNING,AFTERNOON,EVENING } from '../Constants/Greetings'
 
 export default function Login() {
   const [darkMode] = useContext(DarkContext)
-
   
-
+  function getGreetingMsg(){
+    let currentHour = new Date().getHours()
+    if (currentHour < 12){
+      return MORNING;
+    }else if(currentHour < 17){
+      return AFTERNOON;
+    }else{
+      return EVENING
+    }
+  }
+  
   return (
     // full page
     <div className={`${style.login} ${darkMode ? style.ligntTheme : style.darkTheme}`}>
@@ -33,7 +43,7 @@ export default function Login() {
           <div>
             <div className={style.loginInfoGreeting}>
             <h1>Welcome</h1>
-            <h3>Good Afternoon !</h3>
+            <h3>{getGreetingMsg()}</h3>
             </div>
           </div>
 

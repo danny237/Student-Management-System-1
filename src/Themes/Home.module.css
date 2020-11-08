@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homePage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2D3436;
+    display: flex;
+    position: relative;
+}
+
+.sidebar{
+    width: 70px;
+    height: 100vh;
+    background: #2D3436;
+    box-shadow: 4px 0px 50px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.statusBar{
+    position: absolute;
+    height: 196px;
+    width: 1850px;
+    background: #2D3436;
+    box-shadow: 4px 0px 50px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.lightTheme{
+    background-color: #fff;
+    box-shadow: 0px 10px 25px rgba(181, 173, 243, 0.5);
+}
+

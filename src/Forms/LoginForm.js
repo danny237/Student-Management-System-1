@@ -1,17 +1,24 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext } from 'react';
 import InputField from '../Components/InputField';
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import Button from '@material-ui/core/Button';
-import style from '../Themes/LoginStyle.module.css'
-import { DarkContext } from '../App'
-import isAuthenticate from '../Auth/isAuthenticate'
+import style from '../Themes/LoginStyle.module.css';
+import { DarkContext, LoginContext } from '../App';
+import isAuthenticate from '../Auth/isAuthenticate';
+
+// toastify
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function LoginForm() {
 
+    const [loginStatus, setLoginStatus] = useContext(LoginContext)
     const [darkMode] = useContext(DarkContext)
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    const invalid = () => toast("Invalid Credential");
+    const empty =() => toast("Please Enter Username and Password.");
 
     const submitHandler = () => {
         
@@ -22,15 +29,17 @@ export default function LoginForm() {
     
         if ((username !== "") && (password !== "")){
             if (isAuthenticate(user)){
-                console.log("authenticated")
+                setLoginStatus(true);
               }else{
-                console.log("not authenticated")
+                invalid()
               }
+            }else{
+                empty()
             }
         }
 
     return (
-        <div>
+        <React.Fragment>
             <div className={`${style.form} ${darkMode ? style.formLight : ''}`}>
 
                 {/* heading */}
@@ -54,7 +63,11 @@ export default function LoginForm() {
                         <DoubleArrowIcon />
                     </div>
                 </Button>
-            </div>
+                
+                {/* toastify */}
+                <ToastContainer />
+
         </div>
+        </React.Fragment>
     )
 }
