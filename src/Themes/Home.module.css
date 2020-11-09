@@ -1,10 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .homePage{
-    height: 200vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: #2D3436;
     display: flex;
-    /* flex-direction: row; */
-    /* position: relative; */
+}
+
+.mainContainer{
+    padding-left: 70px;
+    width: 100%;
 }
 
 .sidebar{
@@ -18,10 +27,6 @@
     position: fixed;
 }
 
-.whiteColor{
-    color: #fff;
-}
-
 .sidebarholder{
     height: 400px;
     display: flex;
@@ -30,10 +35,6 @@
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
-}
-.mainContainer{
-    margin-left: 70px;
-    width: 100vw;
 }
 
 .statusBar{
@@ -47,8 +48,15 @@
 }
 
 .lightTheme{
+    color: #2D3436;
     background-color: #fff;
-    box-shadow: 0px 10px 25px rgba(181, 173, 243, 0.5);
+    box-shadow: 0px 15px 30px rgba(181, 173, 243, 0.5);
+}
+
+.darkTheme{
+    color: #fff;
+    background-color:#2D3436;
+    box-shadow: 0px 12px 18px rgba(1, 1, 1, 0.5); 
 }
 
 .leftSection{
@@ -74,9 +82,120 @@
 .statusBtn{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logoutBtn{
     display: flex;
     align-items: center;
 }
+
+.content{
+    margin: 100px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activities{
+    width: 696px;
+    height: 637px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.attendance{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.attandenceCard{
+    height: 128px;
+    width: 45%;
+    border-top: 5px solid #fff;
+    border-radius: 5px 5px 15px 15px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.calender{
+    width: 100%;
+    height: 437px;
+    border-top: 5px solid #fff;
+    border-radius: 5px 5px 15px 15px;
+    padding: 30px 50px;
+}
+
+.noticeBoard{
+    width: 422px;
+    height: 638px;
+    border-top: 5px solid #fff;
+    border-radius: 5px 5px 15px 15px;
+    padding: 30px 50px;
+}
+
+.noticeHolder{
+    width: 100%;
+    height: 126px;
+    border-left: 5px solid #fff;
+    border-radius: 5px 15px 15px 5px;
+    margin: 35px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.recentActivities{
+    border-top: 5px solid #fff;
+    border-radius: 5px 5px 15px 15px;
+    width: 422px;
+    height: 638px;
+    padding: 30px 50px;
+}
+
+
+
+.notice{
+    height: 55px;
+    width: 100%;
+    line-height: 1.5rem;
+    margin-bottom: 15px 0;
+    font-size: .9rem;
+    overflow: hidden;
+}
+
+.postedTime{
+    display: flex;
+    align-items: center;
+}
+
+.postedTime p{
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+.activity{
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+.lightHorizontalBorder{
+    color: #2D3436;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px rgba(181, 173, 243, 0.5);
+    border-top: 5px solid #2D3436;
+}
+
+.lightVerticalBoder{
+    color: #2D3436;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px rgba(181, 173, 243, 0.5);
+    border-left: 5px solid #2D3436;
+    border-radius: 5px 15px 15px 5px;
+}
+
+
