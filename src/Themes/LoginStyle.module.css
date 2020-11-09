@@ -230,3 +230,25 @@ input::placeholder{
         margin: 20px;
     }
 }
+
+@media only screen and (max-width:412px){
+    .loginContainer{
+       width: 300px;
+    }
+    .ncit{
+        left: 98px;
+        top: 307px;
+    }
+    .loginInfoGreeting{
+        margin-left: 0;
+        text-align: center;
+    }
+    .loginForm{
+        width: 300px;
+    }
+    .inputField{
+        margin: 10px 0;
+        width: 200px;
+        padding: 20px;
+    }
+}

@@ -13,7 +13,9 @@ export default function Home() {
     // main page
     <div className={`${homeStyle.homePage} ${darkMode ? homeStyle.lightTheme : ''}`}>
       {/* home sidebar */}
-      <div className={`${homeStyle.sidebar} ${darkMode ? homeStyle.lightTheme : ''}`}></div>
+      <div className={`${homeStyle.sidebar} ${darkMode ? homeStyle.lightTheme : ''}`}>
+        
+      </div>
 
       <div className={homeStyle.mainContainer}>
         {/* status bar */}
