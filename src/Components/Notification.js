@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 
 export default function Notification({className}) {
 
-    const [darkMode, setDarkMode] = useContext(DarkContext);
+    const [darkMode] = useContext(DarkContext);
 
   return (
     <div className={`${className ? className : homeStyle.notification}`}>

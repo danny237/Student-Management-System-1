@@ -293,3 +293,25 @@
         width: 50px;
     }
  }
+
+ @media only screen and (max-width: 600px){
+    .attendenceCard{
+        width: 48%;
+        padding: 20px;
+    }
+    .dateInfo{
+        width: 95%;
+    }
+    .calender{
+        width: 100%;
+    }
+    .noticeBoard{
+        width: 95%;
+    }
+    .recentActivities{
+        width: 95%;
+    }
+    .content{
+        margin: 70px 10px;
+    }
+}

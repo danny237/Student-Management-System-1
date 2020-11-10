@@ -6,7 +6,7 @@ import AccessTimeIcon from '@material-ui/icons/AccessTime';
 
 export default function NoticeBoard() {
 
-    const [darkMode, setDarkMode] = useContext(DarkContext); 
+    const [darkMode] = useContext(DarkContext); 
 
     // notices
   let notices = Notices.map((item, index) => (

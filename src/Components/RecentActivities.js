@@ -5,7 +5,7 @@ import { Activities } from '../Constants/RawData';
 
 export default function RecentActivities() {
 
-    const [darkMode, setDarkMode] = useContext(DarkContext);
+    const [darkMode] = useContext(DarkContext);
 
     // Recent Activities
   let recentActivities = Activities.map((item, index) => (

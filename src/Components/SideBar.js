@@ -13,23 +13,23 @@ import { Link } from "react-router-dom";
 import { DarkContext } from "../App";
 
 export default function SideBar() {
-  const [darkMode, setDarkMode] = useContext(DarkContext);
+  const [darkMode] = useContext(DarkContext);
 
   return (
     <div
       className={`${homeStyle.sidebar} ${darkMode ? homeStyle.lightTheme : ""}`}
     >
       <div className={`${homeStyle.sidebarholder}`}>
-        <Link to='/'>
+        <Link to="/">
           <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
             <HouseIcon />
           </Button>
         </Link>
 
-        <Link to='/application'>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
-          <MarkunreadIcon />
-        </Button>
+        <Link to="/application">
+          <Button style={{color: `${darkMode ? "" : "#fff"}` }}>
+            <MarkunreadIcon />
+          </Button>
         </Link>
         <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <AssignmentIcon />

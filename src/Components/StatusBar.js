@@ -9,7 +9,7 @@ import Notification from "./Notification";
 
 export default function StatusBar() {
 
-    const [darkMode, setDarkMode] = useContext(DarkContext);
+    const [darkMode] = useContext(DarkContext);
     const [loginStatus, setLoginStatus] = useContext(LoginContext);
 
   return (
