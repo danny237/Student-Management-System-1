@@ -1,12 +1,11 @@
 import React, {useContext} from "react";
-import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Button from "@material-ui/core/Button";
 import homeStyle from '../Themes/Home.module.css';
 
 import Switcher from "../Components/Switcher";
 import { DarkContext, LoginContext } from '../App';
+import Notification from "./Notification";
 
 export default function StatusBar() {
 
@@ -23,6 +22,7 @@ export default function StatusBar() {
         <section className={homeStyle.leftSection}>
           <div>
             <h1>Nagarjuna College of IT</h1>
+              <Notification className={homeStyle.notification2}/>
           </div>
           <div>
             <h3 style={{ lineHeight: "25px" }}>System Overview</h3>
@@ -32,11 +32,8 @@ export default function StatusBar() {
 
         {/* right section */}
         <section className={homeStyle.rightSection}>
-          <div className={homeStyle.notification}>
-            <NotificationsNoneIcon />
-            <MailOutlineIcon />
-            <p>Daniel Thapa Magar</p>
-          </div>
+          {/* notification */}
+          <Notification />
 
           <div className={homeStyle.statusBtn}>
             {/*  switch */}

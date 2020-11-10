@@ -68,7 +68,7 @@
 
 .rightSection{
     display: flex;
-    width: 250px;
+    width: 300px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -200,6 +200,10 @@
     border-radius: 5px 15px 15px 5px;
 }
 
+.notification2{
+    display: none;
+}
+
  /* media query */
  @media only screen and (max-width:1425px){
     .attendenceCard{
@@ -220,6 +224,66 @@
     }
  }
 
+
  @media only screen and (max-width:1100px){
-   
+    .notification2{
+        flex-direction: row-reverse;
+        display: flex;
+        width: 500;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .notification{
+        display: none;
+    }
+    .statusBtn{
+        width: 300px;
+        flex-direction: column;
+        padding-left: 100px;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dateInfo, .noticeBoard, .recentActivities{
+        width: 90%;
+    }
+    .noticeBoard{
+        margin: 50px 0;
+        padding: 30px 50px;
+    }
+    .recentActivities{
+        padding: 30px 50px;
+    }
+    
+ }
+
+ @media only screen and (max-width:755px){
+     p{
+         font-size: small;
+     }
+     h1,h2,h3,h4{
+         font-size: medium;
+     }
+     .leftSection{
+         width: 90%;
+    }
+    .statusBtn{
+        width: 10%;
+    }
+    .notification2{
+        width: 250px;
+    }
+
+    .statusBar{
+        display: flex;
+    }
+    .attendenceCard h1{
+        margin-top: 10px;
+        font-size: 30px;
+
+    }
  }

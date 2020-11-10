@@ -9,9 +9,11 @@ export default function RecentActivities() {
 
     // Recent Activities
   let recentActivities = Activities.map((item, index) => (
+    <p>
     <li key={index} className={homeStyle.activity}>
       {item.activity}
     </li>
+    </p>
   ))
 
     return (

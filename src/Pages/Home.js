@@ -50,7 +50,7 @@ export default function Home() {
             <div className={`${homeStyle.calender}
             ${darkMode ? homeStyle.lightHorizontalBorder : homeStyle.darkTheme}
             `}>
-              This is calender
+             <p>This is calender</p>
             </div>
           </div>
 
