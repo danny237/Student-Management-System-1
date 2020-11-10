@@ -1,4 +1,4 @@
-export const NoticeBoard = [
+export const Notices = [
     {
         notice: 'College Remains Closed until further notice is conveyes.',
         posted_at: '19th Octo, 2020, 4:15PM'
