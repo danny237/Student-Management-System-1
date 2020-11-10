@@ -1,0 +1,227 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loginContainer {
+  width: 61.25vw;
+  height: 69vh;
+  max-width: 1176px;
+  max-height: 746px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loginInfo {
+  max-width: 37.5%;
+  padding: 75px;
+  background: rgba(108, 92, 231, 0.5);
+  border-radius: 50px 0 0 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.loginInfoTitle {
+  font-size: 39.71px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.loginInfoGreeting {
+  color: #fff;
+  line-height: 48px;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.loginInfoGreeting h2 {
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.loginInfoVerticalText {
+  position: absolute;
+  top: 50%;
+  right: -105px;
+  transform: translate3d(0, -50%, 0);
+  z-index: 0;
+  font-size: 90px;
+  font-weight: 900;
+  opacity: 0.1;
+}
+
+.verticalText {
+  transform: rotate(-90deg);
+}
+
+.loginForm {
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  flex: 1;
+}
+
+.themeSwticher {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.loginInputs {
+  text-align: left;
+  padding: 0 60px;
+}
+
+.loginInputs h1 {
+  font-size: 34px;
+  font-size: 500;
+  margin-bottom: 37px;
+}
+
+.loginInputs input {
+  width: 100%;
+  max-height: 73px;
+  font-size: 22px;
+  font-size: 500;
+  padding: 28px 24px;
+  border: none;
+  margin-bottom: 37px;
+}
+
+.loginDarkButton, .loginLightButton{
+  width: 88px;
+  height: 73px;
+}
+
+.loginDarkButton {
+  background: #fff !important;
+}
+
+.loginLightButton {
+  background: #3a3a3a !important;
+}
+
+.loginButtonDarkIcon {
+  font-size: 30px !important;
+}
+.loginButtonLightIcon {
+  font-size: 30px !important;
+  color: #fff !important;
+}
+
+@media (max-width: 1650px) {
+  .loginInfo {
+    max-width: 30%;
+    padding: 75px 30px;
+  }
+  .loginInputs {
+    padding: 0 50px;
+  }
+  .loginForm {
+    padding: 75px 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .loginInfo {
+    max-width: 30%;
+    padding: 75px 30px;
+  }
+
+  .loginInfoTitle {
+    font-size: 35px;
+  }
+
+  .loginInfoGreeting h2 {
+    font-size: 40px;
+  }
+
+  .loginInfoVerticalText {
+    font-size: 70px;
+    right: -80px;
+  }
+}
+
+@media (max-height: 768px) {
+  .loginInfo {
+    max-width: 30%;
+    padding: 3vh 30px;
+  }
+  .loginInputs {
+    padding: 0 50px;
+  }
+  .loginForm {
+    padding: 3vh 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .loginContainer {
+    display: block;
+  }
+  .loginInfo {
+    text-align: left;
+    width: 87%;
+    max-width: 87%;
+    border-radius: 50px;
+    padding: 40px;
+    justify-content: space-between;
+  }
+  .loginInfoGreeting {
+    margin: 10px 0 20px 0;
+    text-align: center;
+  }
+
+  .loginInfoVerticalText {
+    right: 160px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    top: 220px;
+  }
+  .verticalText {
+    transform: rotate(0);
+  }
+  .loginInputs {
+    padding: 0;
+  }
+  .loginForm {
+    padding: 30px;
+  }
+  .loginInputs input {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .loginInfo {
+    width: 83%;
+  }
+
+  .loginInfoVerticalText {
+    right: 85px;
+  }
+
+  .loginInfoTitle {
+    font-size: 24px;
+  }
+
+  .loginInputs h1 {
+    font-size: 26px;
+    margin-bottom: 20px!important;
+  }
+}
