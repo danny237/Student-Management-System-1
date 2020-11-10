@@ -17,8 +17,11 @@ export default function LoginForm() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const invalid = () => toast("Invalid Credential");
-    const empty =() => toast("Please Enter Username and Password.");
+    const invalid = () => toast.error("Invalid Credential",
+    {draggable: true,hideProgressBar:true,position:"top-center"}
+    );
+    const empty =() => toast.error("Please Enter Username and Password.",
+    {draggable: true,hideProgressBar:true,position:"top-center"});
 
     const submitHandler = () => {
         

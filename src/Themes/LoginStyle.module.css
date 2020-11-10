@@ -16,7 +16,7 @@
 
 .loginContainer{
     width: 1176px;
-    height: 746px;
+    height: 700px;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@
 /* login info */
 .loginInfo{
     width: 441px;
-    height: 746px;
+    height: 700px;
     background: rgba(107, 100, 203, 0.5);
     border-radius: 50px 0 0 50px;
     color: #fff;
@@ -231,13 +231,19 @@ input::placeholder{
     }
 }
 
+@media only screen and (max-width: 755px){
+    .ncit{
+        top: 260px;
+    }
+}
+
 @media only screen and (max-width:412px){
     .loginContainer{
        width: 300px;
     }
     .ncit{
         left: 98px;
-        top: 307px;
+        top: 260px;
     }
     .loginInfoGreeting{
         margin-left: 0;

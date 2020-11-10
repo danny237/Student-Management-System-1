@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Login from './Pages/Login'
 import Home from './Pages/Home'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Application from "./Pages/Application";
 
 export const DarkContext = React.createContext()
 export const LoginContext = React.createContext()
@@ -15,8 +16,6 @@ export default function App() {
     loginStatus,
     darkMode
   }
-
-  // localStorage.setItem('userDesc', JSON.stringify(userDesc))
   
   useEffect(() => {
     localStorage.setItem('userDesc', JSON.stringify(userDesc))
@@ -47,6 +46,10 @@ export default function App() {
 
             <Route exact path="/" 
             render = {() => (loginStatus ? <Home /> : <Login />)}
+            />
+
+            <Route exact path="/application"
+            render = {() => (loginStatus ? <Application /> : <Login />)}
             />
           </LoginContext.Provider>
         </DarkContext.Provider>
