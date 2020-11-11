@@ -116,7 +116,7 @@
     width: 45%;
     border-top: 5px solid #fff;
     border-radius: 5px 5px 15px 15px;
-    padding: 30px 50px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -203,6 +203,25 @@
 .notification2{
     display: none;
 }
+
+/* calender */
+.calenderStyle{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    height:80%;
+}
+
+td, th{
+    padding: 5px;
+}
+
+.currentDayStyle{
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
 
  /* media query */
  @media only screen and (max-width:1425px){
@@ -313,5 +332,8 @@
     }
     .content{
         margin: 70px 10px;
+    }
+    .calender{
+        padding: 20px;
     }
 }

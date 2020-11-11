@@ -7,6 +7,7 @@ import SideBar from '../Components/SideBar';
 import StatusBar from "../Components/StatusBar";
 import NoticeBoard from "../Components/NoticeBoard";
 import RecentActivities from "../Components/RecentActivities";
+import Calender from "../Components/Calender";
 
 export default function Home() {
   const [darkMode] = useContext(DarkContext);
@@ -47,11 +48,8 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={`${homeStyle.calender}
-            ${darkMode ? homeStyle.lightHorizontalBorder : homeStyle.darkTheme}
-            `}>
-             <p>This is calender</p>
-            </div>
+             {/* Calender */}
+             <Calender />
           </div>
 
           {/* Notice board */}
