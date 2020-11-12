@@ -21,31 +21,31 @@ export default function SideBar() {
     >
       <div className={`${homeStyle.sidebarholder}`}>
         <Link to="/">
-          <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+          <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
             <HouseIcon />
-          </Button>
+          </div>
         </Link>
 
         <Link to="/application">
-          <Button style={{color: `${darkMode ? "" : "#fff"}` }}>
+          <div style={{color: `${darkMode ? "" : "#fff"}` }}>
             <MarkunreadIcon />
-          </Button>
+          </div>
         </Link>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <AssignmentIcon />
-        </Button>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        </div>
+        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <FormatListNumbered />
-        </Button>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        </div>
+        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <SupervisorAccountIcon />
-        </Button>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        </div>
+        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <SettingIcon />
-        </Button>
-        <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        </div>
+        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
           <AssignmentTurnedInIcon />
-        </Button>
+        </div>
       </div>
     </div>
   );

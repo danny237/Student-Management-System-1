@@ -81,3 +81,10 @@ label h2{
         padding-left: 50px;
     }
 }
+
+@media only screen and (max-width: 400px){
+    .mainContainer{
+        padding-left: 35px;
+        height: 100vh;
+    }
+}

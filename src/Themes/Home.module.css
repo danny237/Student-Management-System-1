@@ -15,6 +15,7 @@
     padding-left: 70px;
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .sidebar{
@@ -335,5 +336,32 @@ td, th{
     }
     .calender{
         padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .notification2{
+        width: 150px;
+    }
+    .homePage{
+        width: 100vw;
+    }
+    .sidebar{
+        height: 100vh;
+    }
+    .rightSection{
+        width: 160px;
+    }
+    .notification2 > div{
+        margin: 0 5px;
+    }
+    .sidebar{
+        width: 35px;
+    }
+    .mainContainer{
+        padding-left: 35px;
+    }
+    h1{
+        font-size: 15px;
     }
 }

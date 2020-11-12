@@ -3,7 +3,6 @@ import { DarkContext } from '../App';
 import homeStyle from '../Themes/Home.module.css';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import Button from "@material-ui/core/Button";
 
 export default function Notification({className}) {
 
@@ -11,12 +10,12 @@ export default function Notification({className}) {
 
   return (
     <div className={`${className ? className : homeStyle.notification}`}>
-      <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+      <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
         <NotificationsNoneIcon />
-      </Button>
-      <Button style={{ color: `${darkMode ? "" : "#fff"}` }}>
+      </div>
+      <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
         <MailOutlineIcon />
-      </Button>
+      </div>
       <p>Daniel Thapa Magar</p>
     </div>
   );
