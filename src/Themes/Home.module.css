@@ -327,15 +327,23 @@ td, th{
     }
     .noticeBoard{
         width: 95%;
+        padding: 20px;
     }
     .recentActivities{
         width: 95%;
+        padding: 20px;
     }
     .content{
         margin: 70px 10px;
     }
     .calender{
         padding: 20px;
+    }
+    .notification2{
+        width: 150px;
+    }
+    .notification2 > div{
+        margin:0 5px;
     }
 }
 
@@ -352,9 +360,6 @@ td, th{
     .rightSection{
         width: 160px;
     }
-    .notification2 > div{
-        margin: 0 5px;
-    }
     .sidebar{
         width: 35px;
     }
@@ -363,5 +368,8 @@ td, th{
     }
     h1{
         font-size: 15px;
+    }
+    .attendenceCard{
+        padding: 20px 5px;
     }
 }
