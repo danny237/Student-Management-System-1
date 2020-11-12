@@ -29,6 +29,10 @@
     position: fixed;
 }
 
+.MuiSvgIcon-root:hover{
+    background-color: aqua;
+}
+
 .sidebarholder{
     height: 400px;
     display: flex;

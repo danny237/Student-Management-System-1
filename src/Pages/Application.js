@@ -9,6 +9,7 @@ export default function Application() {
   const [darkMode] = useContext(DarkContext);
   const [subTitle, setSubTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const pageName="Application";
 
   return (
     <div
@@ -21,7 +22,7 @@ export default function Application() {
 
       <div className={appStyle.mainContainer}>
         {/* statusBar */}
-        <StatusBar />
+        <StatusBar pageName={pageName} />
 
         {/* application form */}
 

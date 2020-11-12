@@ -7,7 +7,7 @@ import Switcher from "../Components/Switcher";
 import { DarkContext, LoginContext } from '../App';
 import Notification from "./Notification";
 
-export default function StatusBar() {
+export default function StatusBar({pageName}) {
 
     const [darkMode] = useContext(DarkContext);
     const [loginStatus, setLoginStatus] = useContext(LoginContext);
@@ -25,7 +25,7 @@ export default function StatusBar() {
               <Notification className={homeStyle.notification2}/>
           </div>
           <div>
-            <h3 style={{ lineHeight: "25px" }}>System Overview</h3>
+            <h3 style={{ lineHeight: "25px" }}>{pageName}</h3>
             <p>Last logged in 4 hours age.</p>
           </div>
         </section>

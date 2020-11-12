@@ -11,6 +11,7 @@ import Calender from "../Components/Calender";
 
 export default function Home() {
   const [darkMode] = useContext(DarkContext);
+  const pageName = "System Overview"
 
   return (
     // main page
@@ -24,7 +25,7 @@ export default function Home() {
       <div className={homeStyle.mainContainer}>
         
         {/* Status Bar */}
-        <StatusBar />
+        <StatusBar pageName={pageName} />
 
         {/* content */}
         <div className={`${homeStyle.content}`}>

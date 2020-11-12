@@ -7,10 +7,18 @@ import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import SettingIcon from "@material-ui/icons/Settings";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import homeStyle from "../Themes/Home.module.css";
-import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 
 import { DarkContext } from "../App";
+
+const darkBtn = {
+  color: "#2D3436",
+}
+
+const whiteBtn = {
+  color: "#fff"
+}
+
 
 export default function SideBar() {
   const [darkMode] = useContext(DarkContext);
@@ -21,29 +29,29 @@ export default function SideBar() {
     >
       <div className={`${homeStyle.sidebarholder}`}>
         <Link to="/">
-          <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+          <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}>
             <HouseIcon />
           </div>
         </Link>
 
         <Link to="/application">
-          <div style={{color: `${darkMode ? "" : "#fff"}` }}>
+          <div style={{color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
             <MarkunreadIcon />
           </div>
         </Link>
-        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
           <AssignmentIcon />
         </div>
-        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
           <FormatListNumbered />
         </div>
-        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
           <SupervisorAccountIcon />
         </div>
-        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
           <SettingIcon />
         </div>
-        <div style={{ color: `${darkMode ? "" : "#fff"}` }}>
+        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
           <AssignmentTurnedInIcon />
         </div>
       </div>
