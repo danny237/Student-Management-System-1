@@ -11,7 +11,7 @@ export default function StatusBar({pageName}) {
 
     const [darkMode] = useContext(DarkContext);
     const [loginStatus, setLoginStatus] = useContext(LoginContext);
-
+     
   return (
       <div
         className={`${homeStyle.statusBar} ${

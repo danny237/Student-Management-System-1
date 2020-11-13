@@ -8,17 +8,17 @@ import SettingIcon from "@material-ui/icons/Settings";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import homeStyle from "../Themes/Home.module.css";
 import { Link } from "react-router-dom";
+import IconButton from "@material-ui/core/IconButton";
 
 import { DarkContext } from "../App";
 
 const darkBtn = {
   color: "#2D3436",
-}
+};
 
 const whiteBtn = {
-  color: "#fff"
-}
-
+  color: "#fff",
+};
 
 export default function SideBar() {
   const [darkMode] = useContext(DarkContext);
@@ -28,32 +28,61 @@ export default function SideBar() {
       className={`${homeStyle.sidebar} ${darkMode ? homeStyle.lightTheme : ""}`}
     >
       <div className={`${homeStyle.sidebarholder}`}>
-        <Link to="/">
-          <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}>
-            <HouseIcon />
-          </div>
-        </Link>
+        <IconButton>
+          <Link to="/">
+            <div
+              style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+            >
+              <HouseIcon />
+            </div>
+          </Link>
+        </IconButton>
 
-        <Link to="/application">
-          <div style={{color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-            <MarkunreadIcon />
+        <IconButton>
+          <Link to="/application">
+            <div
+              style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+            >
+              <MarkunreadIcon />
+            </div>
+          </Link>
+        </IconButton>
+
+        <IconButton>
+          <div
+            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+          >
+            <AssignmentIcon />
           </div>
-        </Link>
-        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-          <AssignmentIcon />
-        </div>
-        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-          <FormatListNumbered />
-        </div>
-        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-          <SupervisorAccountIcon />
-        </div>
-        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-          <SettingIcon />
-        </div>
-        <div style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color }` }}>
-          <AssignmentTurnedInIcon />
-        </div>
+        </IconButton>
+        <IconButton>
+          <div
+            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+          >
+            <FormatListNumbered />
+          </div>
+        </IconButton>
+        <IconButton>
+          <div
+            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+          >
+            <SupervisorAccountIcon />
+          </div>
+        </IconButton>
+        <IconButton>
+          <div
+            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+          >
+            <SettingIcon />
+          </div>
+        </IconButton>
+        <IconButton>
+          <div
+            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+          >
+            <AssignmentTurnedInIcon />
+          </div>
+        </IconButton>
       </div>
     </div>
   );

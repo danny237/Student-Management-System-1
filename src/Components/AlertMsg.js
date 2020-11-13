@@ -4,8 +4,7 @@ import { Button } from '@material-ui/core';
 import appStyle from '../Themes/Application.module.css';
 
 export default function AlertMsg(alert) {
-
-  console.log(alert)
+  
   return (
     <div 
     className={`${appStyle.alertMessage} ${ alert.alertInfo.type === 'error' ? appStyle.alertError : appStyle.alertSuccess }`}>

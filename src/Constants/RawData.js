@@ -37,3 +37,36 @@ export const Activities = [
     },
 
 ]
+
+export const teachersList = [
+    {
+        name: "Daniel Magar",
+        subject: "Mathematics-II",
+        email: "dannymagar23@gmail.com",
+        phone_number: "+977 9808848605"
+    },
+    {
+        name: "Amrit Pradhan",
+        subject: "Physic",
+        email: "dannymagar23@gmail.com",
+        phone_number: "+977 9808848605"
+    },
+    {
+        name: "Jyoti",
+        subject: "English",
+        email: "dannymagar23@gmail.com",
+        phone_number: "+977 9808848605"
+    },
+    {
+        name: "Pracee",
+        subject: "Mathematics-II",
+        email: "dannymagar23@gmail.com",
+        phone_number: "+977 9808848605"
+    },
+    {
+        name: "Sangya",
+        subject: "Mathematics-II",
+        email: "dannymagar23@gmail.com",
+        phone_number: "+977 9808848605"
+    }
+]
