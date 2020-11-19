@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import teacherStyle from '../Themes/Teachers.module.css';
-import homeStyle from '../Themes/Home.module.css';
 import { DarkContext } from '../App';
 
 

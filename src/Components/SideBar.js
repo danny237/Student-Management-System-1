@@ -63,11 +63,13 @@ export default function SideBar() {
           </div>
         </IconButton>
         <IconButton>
-          <div
-            style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
-          >
-            <SupervisorAccountIcon />
-          </div>
+          <Link to="/teachers">
+            <div
+              style={{ color: `${darkMode ? darkBtn.color : whiteBtn.color}` }}
+            >
+              <SupervisorAccountIcon />
+            </div>
+          </Link>
         </IconButton>
         <IconButton>
           <div

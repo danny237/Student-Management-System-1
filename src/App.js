@@ -53,7 +53,9 @@ export default function App() {
             render = {() => (loginStatus ? <Application /> : <Login />)}
             />
 
-            <Route exact path="/teachers" component={Teachers} />
+            <Route exact path="/teachers"
+            render = {() => (loginStatus ? <Teachers /> : <Teachers />)}
+            />
           </LoginContext.Provider>
         </DarkContext.Provider>
       </Switch>
