@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Application from "./Pages/Application";
 import Teachers from './Pages/Teachers';
+import Results from "./Pages/Results";
 
 export const DarkContext = React.createContext()
 export const LoginContext = React.createContext()
@@ -56,6 +57,8 @@ export default function App() {
             <Route exact path="/teachers"
             render = {() => (loginStatus ? <Teachers /> : <Teachers />)}
             />
+
+            <Route exact path="/results" component={Results}/>
           </LoginContext.Provider>
         </DarkContext.Provider>
       </Switch>

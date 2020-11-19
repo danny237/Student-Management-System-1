@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContent{
+    margin-left: 70px;
+    color: #fff;
+    background-color: #2D3436;
+}
+
+.content{
+    padding: 70px;
+}
