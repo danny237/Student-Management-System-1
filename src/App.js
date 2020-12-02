@@ -44,7 +44,7 @@ export default function App() {
     <Router>
       <Switch>
         <DarkContext.Provider value={[darkMode,setDarkMode]}>
-          <LoginContext.Provider value={[loginStatus, setLoginStatus]}>
+          <LoginContext.Provider value={{loginStatus, setLoginStatus}}>
 
             <Route exact path="/" 
             render = {() => (loginStatus ? <Home /> : <Login />)}
